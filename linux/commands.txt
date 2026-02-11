@@ -1,0 +1,93 @@
+Linux Basics
+
+#Linux Architecture
+Hardware-> Kernel -> Shell -> Applications
+
+#linux file system hierachy
+
+/ - here is  where every directory starts with
+/root -home `directory of the root user (supersuer)
+/home -
+/bin
+/dev
+/var
+/mnt
+/usr 
+/etc
+
+
+#Linux commands
+
+ls (list - lists files and folder)
+ls -a (lists all files and folder including hidden )
+ls -l (lists everything about the files ie owner, permissions, and creation time)
+
+pwd - present working directory
+
+cd -change directory
+cd .. (goes back  a directory)
+cd ~ (goes to current user home directory)
+
+mkdir - make a directory
+mkdir new_directory_name
+
+touch new_file.txt  (creates a new file)
+echo "this is new text" >> new_file.txt (this pastes the out put of first command)
+
+rm (removes files and folders)
+rm file_name.txt
+rm -r folder_name
+
+rmdir (removes directory)
+rmdir directory_name
+
+cat (view a file without opening it)
+cat new_file.txt
+
+zcat (views contents of a compressed file)
+zcat file1.gz (view contents of file1.gz)
+zcat file.gz file2.gz (views multiple compressed files)
+
+head my_file.txt (prints top 10 lines of my_file.txt)
+tail my_file.txt (prints bottom 10 lines of my_file.txt)
+tail -f file_name.txt (keeps prininting the bottom lines of a file)
+    useful to view logs
+
+less filename.txt(small paginated view of a file)
+more filename.txt(more paginatedview of a file)
+
+cp (copy a file or folder)
+cp source/filename.txt newfolder/
+cp -r oldfoldername/  newfoldername/ (copies everyhtinig form oldfoldername to newfoldername)
+
+mv (moves or renames files/folders)
+works similar as copy command
+
+wc (word count)
+wc fillename.txt (shows line, words and size of the file in bytes)
+
+ln (linking hardlink or softlink it creates links for files or apps just likes windows app shortcuts)
+echo "this is a new softlink/hardlink file" > /home/chv/devops/linux/somefile.txt
+echo "this is a new hardlink file" > /home/chv/devops/linux/somefile.txt
+
+hardlinks -if the original file is moved or delted  the hardlink is unaffeced
+softlinks -are like windows appl shortcuts which become unusable if the original files are delted or moved
+
+cut (outputs portion out of full file )
+filename.txt (this is a file name)
+cut -b 1-4 filename.txt 
+    -"this" (cuts length of text from 1-4 bytes and outputs it)
+
+tee (tee writes the input of stdin to a file and the stdout, the console.)
+echo "this is tee cmd" | tee teefile.txt
+    -this will store the text in file as well output it on the console
+
+sort (sorts the file with word occuring in the dictionary )
+
+diff (shows differences between files)
+demofile.txt(this is a new file)
+teefile.txt(this is a tee cmd)
+diff demofile.txt teefile.txt
+
+
+
