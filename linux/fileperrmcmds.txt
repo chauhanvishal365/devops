@@ -1,0 +1,18 @@
+file permission commands
+
+umask (default file and directory permission in the system)
+can be changed in .bashrc
+
+chmod (used to change permission of file/directory)
+chmod 777 filename.txt
+
+ls -l
+
+chown (change owner of a fiel)
+sudo chown tappu filename.txt
+
+chgrp command (change groupp of a file)
+sudo chgrp devops filename.txt
+
+
+
