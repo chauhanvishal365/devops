@@ -1,0 +1,28 @@
+
+#thses commands are used for user and file management in devops
+
+#system-level commands
+uname (shows which os is system based on for ubuntu its linux while on macos its darwin)
+uptime (shows all users and their time on system)
+date (shows system date)
+who (shows all users login info )
+whoami (shows the current logged in username)
+which (shows which kind of appl is installed / can be used to know location of any cmd)
+which bash (shows the installation dir of bash)
+
+id (outputs users id and group id active in the system)
+Sudo (used to give super user commnds for root access)
+shutdown (used to shutdown the instance or system used with sudo)
+reboot (used to reboot the system)
+
+apt (Application package manager )
+sudo apt install docker.io (apt checks first system for installing app)
+
+ctrl+R(^R) reverse search
+
+
+
+
+
+
+#user and group management commands

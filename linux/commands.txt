@@ -90,4 +90,24 @@ teefile.txt(this is a tee cmd)
 diff demofile.txt teefile.txt
 
 
+#DISK USAGE
+df (see disk usage)
+du (disk utility)
+
+#PROCESSES
+ps (running process)
+top (all processes)
+fuser (Lists PIDs of processes using files or filesystems)
+kill (used to kill any processes using the id using top vs ps)
+
+disk space
+free (used to free space ram)
+free -h 
+
+nohup (redirects ouput of a different command in a nohub file)
+nohup df -h (will make a newfile nohup.out and save the output of df -h in it)
+
+vmstat (shows the imfo about virtual memory ie cache)
+vmstat -a
+
 
