@@ -15,10 +15,26 @@ Sudo (used to give super user commnds for root access)
 shutdown (used to shutdown the instance or system used with sudo)
 reboot (used to reboot the system)
 
-apt (Application package manager )
+apt (advanced package manager )
 sudo apt install docker.io (apt checks first system for installing app)
+    -apt install command works by orchestrating a multi-stage process that involves locating, downloading, verifying, and unpacking software 
+      packages and their dependencies from online repositories
+sudo apt-get install docker.io (gets package from online and installs it)
 
-ctrl+R(^R) reverse search
+sudo apt remove docker.io (uninstalls docker)
+
+# apt vs yum vs dbt vs pacman
+these are different package mangaer for differnet types linux system
+apt- debian(ubuntu)
+dnf/yum- centOS & fedora (redhat)
+pacman (arc linux)
+portage (chromeOS)
+
+ctrl+R (reverse search the commands used in the past)
+
+
+
+
 
 
 
